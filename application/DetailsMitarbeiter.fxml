@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="929.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DetailsMitarbeiterController">
+   <children>
+      <GridPane layoutX="546.0" layoutY="111.0" prefHeight="390.0" prefWidth="287.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="EMail" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Personentyp" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SVNR" GridPane.rowIndex="2" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Amt" GridPane.rowIndex="3" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gehaltsstufe" GridPane.rowIndex="4" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Wochenstunden" GridPane.rowIndex="5" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vorrücksdatum" GridPane.rowIndex="6" />
+            <TextField fx:id="tf_email" GridPane.columnIndex="1" />
+            <TextField fx:id="tf_svnr" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ComboBox fx:id="cb_personentyp" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Einstelldatum" wrappingWidth="96.5367431640625" GridPane.rowIndex="8" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bankverbindung" GridPane.rowIndex="7" />
+            <ComboBox fx:id="cb_amt" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ComboBox fx:id="cb_gehaltsstufe" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="tf_wochenstunden" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="tf_einstelldatum" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <DatePicker fx:id="dp_vorruecksdatum" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <DatePicker fx:id="dp_einstelldatum" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="74.0" layoutY="103.0" prefHeight="390.0" prefWidth="325.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Anrede" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Titel" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vorname" GridPane.rowIndex="2" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nachname" GridPane.rowIndex="3" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Straße / Hausnummer" GridPane.rowIndex="5" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PLZ" GridPane.rowIndex="6" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ort" GridPane.rowIndex="7" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Telefonnummer" GridPane.rowIndex="8" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Geburtsdatum" GridPane.rowIndex="4" />
+            <TextField fx:id="tf_titel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="tf_vorname" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="tf_nachname" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="tf_strasse_hausnr" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="tf_plz" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="tf_ort" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="tf_telefonnummer" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <DatePicker fx:id="dp_geburtsdatum" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ComboBox fx:id="cb_anrede" prefHeight="26.0" prefWidth="166.0" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <Pane prefHeight="82.0" prefWidth="930.0" style="-fx-background-color: #bb0e0c;">
+         <children>
+            <Text fx:id="l_header" fill="#fffefe" layoutX="242.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DETAIL MITARBEITER">
+               <font>
+                  <Font name="Verdana Bold" size="36.0" />
+               </font>
+            </Text>
+            <Button fx:id="bt_exit" layoutX="887.0" layoutY="1.0" mnemonicParsing="false" onAction="#exit" prefHeight="34.0" prefWidth="38.0" style="-fx-background-color: #bb0e0c;" />
+            <ImageView fitHeight="24.0" fitWidth="19.0" layoutX="896.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/times-solid.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
